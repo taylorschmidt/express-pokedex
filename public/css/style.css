@@ -1,0 +1,103 @@
+.text-center {
+    text-align: center;
+}
+li {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-left: 8px;
+  }
+body {
+    background: #bdffda;
+    font-family: 'Lato', sans-serif;
+}
+
+.pokeTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.well {
+    border: 2px solid black;
+    height: 23vw;
+    width: 20vw;
+    background: #e3e3e3;
+    margin: 10px;
+    text-align: center;
+}
+
+.img {
+    height: 10vw;
+    width: 10vw;
+}
+
+.showContainer {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    align-content: space-around;
+    /* justify-content: center; */
+}
+
+.name, .types, .abilities {
+    border: 2px solid black;
+    height: 24vw;
+    width: 30vw;
+    margin: 10px;
+    background: #e3e3e3;
+}
+
+.imgItself {
+    height: 17vw;
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moves {
+    background: #e3e3e3;
+    margin: 10px;
+    width: 94vw;
+    border: 2px solid black;
+}
+
+.spMoves {
+    display: flex;
+    flex-wrap: wrap;
+}
+h3 {
+    text-align: center;
+}
+
+.header {
+    padding: .01vw 0vw .01vw 0vw;
+    background: rgb(179, 178, 178);
+    font-size: 2vw;
+}
+
+.frontHeader {
+    font-size:1.5vw;
+}
+
+.imgFront {
+    height: 10vw;
+    width: 10vw;
+}
+
+.btn {
+    background-color: #bdffda;
+    border-radius: 8px;
+    height: 2vw;
+    border: 2px solid black;
+    font-family: 'Lato', sans-serif;
+} 
+.btn:hover {
+    background-color: #e3e3e3
+}

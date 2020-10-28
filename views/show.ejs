@@ -1,0 +1,49 @@
+<h1>Information About Pokemon <%= pokeData.id %>:</h1>
+
+<div class='showContainer'>
+
+
+
+<div class='name'>
+    <div class='header'><h3><%=pokeData.name%></h3> </div>
+<img class='imgItself' src=<%=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokeData.id}.png`%>>
+</div>
+
+
+
+
+
+<div class='types'>
+<div class='header'>
+<h3>Types</h3>
+</div>
+<% let typesArray = pokeData.types %>
+<% typesArray.forEach(element => { %>
+    <li><%=element.type.name%></li>
+<% }) %>
+</div>
+
+<div class='abilities'>
+    <div class='header'>
+<h3>Abilities</h3>
+</div>
+<% let abilitiesArray = pokeData.abilities %>
+<% abilitiesArray.forEach(element => { %>
+    <li><%=element.ability.name%></li>
+<% }) %>
+<br>
+</div>
+
+
+<div class='moves'>
+    <div class='header'>
+<h3>Moves</h3></div><br>
+<div class='spMoves'>
+<% let movesArray = pokeData.moves %>
+<% movesArray.forEach(element => { %>
+    <li><%=element.move.name%>,</li>
+<% }) %>
+</div>
+</div>
+
+</div>
